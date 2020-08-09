@@ -2,12 +2,10 @@ version: "3"
 
 services:
   django:
-    build:
-      context: .
-      dockerfile: Dockerfile-django
+    build: ./django
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/code
+      - .:/code2
     ports:
       - "8000:8000"
     restart: always
