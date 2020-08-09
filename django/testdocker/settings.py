@@ -25,7 +25,7 @@ SECRET_KEY = '8(ys58hkrcn*ozs*2c+1o1-6w5=@101xj!l(n(&$)mrgobbvd)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'Fsoft@12345',
-        'HOST': 'localhost',
+        'HOST': '192.168.0.1',
         'PORT': '5432',
     }
 }
