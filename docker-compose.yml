@@ -2,8 +2,10 @@ version: "3"
 
 services:
   django:
-    build: ./django
-    command: python django/manage.py runserver 0.0.0.0:8000
+    build:
+      context: .
+      dockerfile: Dockerfile-django
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
