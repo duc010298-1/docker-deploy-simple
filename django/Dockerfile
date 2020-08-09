@@ -4,7 +4,6 @@ RUN apk update && apk add --no-cache postgresql-dev gcc musl-dev gcc alpine-sdk 
 RUN apk add --no-cache jpeg-dev zlib-dev
 RUN apk add --no-cache --virtual .build-deps build-base linux-headers
 
-RUN ls
 RUN mkdir /code
 COPY . /code
 
