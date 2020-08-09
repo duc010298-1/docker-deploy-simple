@@ -16,3 +16,6 @@ sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo chmod +x /usr/bin/docker-compose
 
 # Folder save source code: /usr/local/src
+
+# Run and build image
+docker-compose up --build -d
