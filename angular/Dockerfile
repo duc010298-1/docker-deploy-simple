@@ -1,5 +1,5 @@
 ### STAGE 1 ###
-FROM node:10.10-alpine AS build
+FROM node:alpine AS build
 
 RUN mkdir /code
 COPY . /code
